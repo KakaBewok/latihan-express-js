@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   const query = "SELECT * FROM daftar_siswa";
   db.query(query, (error, result) => {
     //hasil dari query (error untuk menghandle error)
-    response(200, result, "get all data from data_mahasiswa", res);
+    response(200, result, "gets all data from data_mahasiswa", res);
   });
 });
 //mencoba pake params
